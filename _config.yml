@@ -19,7 +19,7 @@ description: Last updated 18 September 2019
 # baseurl should be an empty string
 #baseurl: ""
 
-baseurl: "https://mbadros.github.io/res_opus"
+baseurl: "https://mbadros.github.io/res_opus/"
 # baseurl: ""
 
 

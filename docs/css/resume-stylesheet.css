@@ -1,3 +1,9 @@
+---
+layout: nil
+---
+
+{% include style.css %}
+
 /* Resume style sheet */
 <link rel="stylesheet" type="type/css" href='https://fonts.googleapis.com/css?family=Cardo|Cinzel'>
 
