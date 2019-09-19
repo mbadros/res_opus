@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Resume - Mark Badros</title>
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+{% capture spaceless %}
+
+  <!-- description -->
+  {% if page.excerpt %}
+    {% assign description = page.excerpt | strip_html %}
+  {% else %}
+    {% assign description = site.description | strip %}
+  {% endif %}
+
+  {% assign description = description
+                        | newline_to_br
+                        | strip_newlines
+                        | replace: '<br />', ' '
+                        | strip_html
+                        | strip
+                        | truncatewords: 150 %}
+{% endcapture %}
+
+<head>
+    {% include meta/html.html %}
+    {% comment %}<!-- Required meta tags -->{% endcomment %}
+    <title>{{ (page.title | default: site.title) | escape }}</title>
+  
+    {% comment %}<!-- Custom CSS -->{% endcomment %}
+    <link rel="stylesheet" href="{{ '/_css/resume-stylesheet.css' | relative_url }}">
+
+    {% comment %}<!-- Stuff -->{% endcomment %}        
+    <link href="{{ site.baseurl }}/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+</head>
