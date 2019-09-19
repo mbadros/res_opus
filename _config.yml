@@ -14,13 +14,13 @@ description: Last updated 18 September 2019
 # url is the the website domain URL without a trailing slash
 #url: "https://example.com"
 
-theme: jekyll-theme-architect
+# theme: jekyll-theme-architect
 
 # baseurl should be an empty string
 #baseurl: ""
 
-# baseurl: "https://mbadros.github.io/Timberlake"
-baseurl: ""
+baseurl: "https://mbadros.github.io/res_opus"
+# baseurl: ""
 
 
 # --- General options --- #
